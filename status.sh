@@ -9,7 +9,7 @@ cat /proc/cpuinfo | grep -m 1 'cache size'
 echo "          <<<RAM>>>"
 cat /proc/meminfo | grep MemTotal
 cat /proc/meminfo | grep MemFree
-echo "                  <<<HDD>>>"
+echo "          <<<HDD>>>"
 df -h 2>&1 | grep -v 'tmpfs' 
 echo "          <<<NET>>>"
 echo "Iface:     IP address:"
